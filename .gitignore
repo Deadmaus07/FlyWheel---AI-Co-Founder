@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# data stores (generated at runtime)
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/chroma/
+data/*.sqlite3
+data/ads/
+data/llm_cache/
+data/site/
+
+# logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# generated sample order files (tools/sample_data.py)
+data/sample_orders.*
+data/uploads/
+Course_Handout__Agentic AI.pdf
+docs/project_report.md

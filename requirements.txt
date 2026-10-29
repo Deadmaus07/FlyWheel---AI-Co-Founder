@@ -1,0 +1,40 @@
+# NOTE: install in stages (see docs/setup.md) — resolving crewai + google-adk
+# + a2a-sdk + chromadb together in one pip pass exceeds pip's resolver depth.
+
+# Agent orchestration
+crewai>=0.80.0
+google-adk
+
+# Agent-to-tool / agent-to-agent
+mcp
+a2a-sdk
+
+# LLMs
+ollama
+groq
+google-genai  # NOTE: google-generativeai is deprecated (EOL) — use this instead
+
+# Backend
+fastapi
+uvicorn
+python-dotenv
+pydantic
+
+# Storage
+chromadb
+sqlalchemy          # decision records + usage, over SQLite or Postgres
+alembic             # schema migrations
+psycopg[binary]     # Postgres driver; unused on the default SQLite path
+
+# Uploaded order files (.csv / .xlsx)
+pandas
+openpyxl
+
+# Free web search for Market Research (DuckDuckGo, no API key)
+ddgs
+
+# Dashboard
+streamlit
+
+# Testing
+pytest
